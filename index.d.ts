@@ -47,7 +47,7 @@ interface ShrinkRayOptions extends Filterable {
    */
   threshold?: number | string | false;
 
-  /** Whether to use node-zopfli-es (true) or zlib (false) for gzip compression. Defaults to true. */
+  /** Whether to use node-zopfli (true) or zlib (false) for gzip compression. Defaults to true. */
   useZopfliForGzip?: boolean;
 
   /**

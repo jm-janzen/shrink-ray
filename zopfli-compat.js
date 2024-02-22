@@ -1,9 +1,9 @@
 module.exports = function zopfliCompat(useZopfliForGzip) {
   if (useZopfliForGzip) {
     try {
-      return require('node-zopfli-es');
+      return require('node-zopfli');
     } catch (e) {
-      process.emitWarning('Module "node-zopfli-es" was unavailable',
+      process.emitWarning('Module "node-zopfli" was unavailable',
         {
           type: 'MISSING_MODULE',
           code: 'ZOPFLI_COMPAT',

@@ -56,7 +56,7 @@
     "expect": "^26.6.2",
     "iltorb": "^2.4.5",
     "mocha": "^8.3.2",
-    "node-zopfli-es": "^1.0.7",
+    "node-zopfli": "^2.1.4",
     "nyc": "^15.1.0",
     "proxyquire": "^2.1.0",
     "semantic-release": "^17.4.2",
@@ -64,7 +64,7 @@
   },
   "peerDependencies": {
     "iltorb": "^2.0.0",
-    "node-zopfli-es": "^1.0.3"
+    "node-zopfli": "^2.1.4"
   },
   "engines": {
     "node": ">=8.0"

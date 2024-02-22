@@ -82,7 +82,7 @@ Some environments may not be able to build these dependencies, but
 `shrink-ray` tries to run even when they are absent; it just falls back to
 gzip.
 
-Therefore, the `iltorb` and `node-zopfli-es` modules are listed as
+Therefore, the `iltorb` and `node-zopfli` modules are listed as
 `peerDependencies` in `package.json`. This is for two reasons:
 
 - `shrink-ray` will install successfully without them and fall back to gzip
@@ -94,7 +94,7 @@ Add them manually to your `package.json` as `optionalDependencies`:
 ```js
 "optionalDependencies": {
   "iltorb": "~2.0.0",
-  "node-zopfli-es": "~1.0.3"
+  "node-zopfli": "^2.1.4"
 }
 ```
 
@@ -132,7 +132,7 @@ of options in `shrink-ray`, you will get a deprecation warning.
 
 #### useZopfliForGzip
 
-Whether to use [node-zopfli-es](https://www.npmjs.com/package/node-zopfli-es) (`true`) or zlib (`false`) for gzip compression.
+Whether to use [node-zopfli](https://www.npmjs.com/package/node-zopfli) (`true`) or zlib (`false`) for gzip compression.
 Defaults to `true`.
 
 #### filter
